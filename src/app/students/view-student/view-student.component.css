@@ -1,0 +1,187 @@
+.top-row {
+  padding: 1em 0;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  background-color: #F7f7f7;
+  border: 2px solid #CCC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 200px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Popup container */
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Dim background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Popup box */
+.popup-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* Success checkmark */
+.popup-box .icon {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+/* Congrats text */
+.popup-box h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Message */
+.popup-box p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* OK button */
+.popup-box .ok-btn {
+  background-color: #4BCFFA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.popup-box .ok-btn:hover {
+  background-color: #3bbde5;
+}
+
+
+/* Popup container */
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Dim background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* Success and warning icons */
+.popup-box .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.popup-box .icon.success {
+  color: #4caf50;
+}
+
+.popup-box .icon.warning {
+  color: #ffcc00;
+}
+
+/* Title text */
+.popup-box h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Message */
+.popup-box p {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Popup actions (buttons) */
+.popup-actions {
+  margin-top: 20px;
+}
+
+/* OK button */
+.popup-box .ok-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Cancel and delete buttons */
+.popup-box .cancel-btn, .popup-box .delete-btn {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.popup-box .delete-btn {
+  background-color: #ff4444;
+}
+
+.popup-box .delete-btn:hover {
+  background-color: #e43b3b;
+}
+
+.popup-box .cancel-btn:hover {
+  background-color: #b3b3b3;
+}
+
+.popup-box .ok-btn:hover {
+  background-color: #45a049;
+}
