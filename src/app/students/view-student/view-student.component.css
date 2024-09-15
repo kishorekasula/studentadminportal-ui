@@ -185,3 +185,7 @@ body {
 .popup-box .ok-btn:hover {
   background-color: #45a049;
 }
+
+.spaced-btn {
+  margin-right: 10px; /* Space between buttons */
+}
