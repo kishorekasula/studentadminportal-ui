@@ -6,20 +6,20 @@ import { ViewStudentComponent } from './students/view-student/view-student.compo
 const routes: Routes = [
   {
     path: '',
-    component: StudentsComponent
+    component: StudentsComponent,
   },
   {
     path: 'students',
-    component: StudentsComponent
+    component: StudentsComponent,
   },
   {
     path: 'students/:id',
-    component: ViewStudentComponent
-  }
+    component: ViewStudentComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -9,8 +9,8 @@
 .image-container {
   width: 200px;
   height: 200px;
-  background-color: #F7f7f7;
-  border: 2px solid #CCC;
+  background-color: #f7f7f7;
+  border: 2px solid #ccc;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -59,7 +59,7 @@ body {
 /* Success checkmark */
 .popup-box .icon {
   font-size: 40px;
-  color: #4CAF50;
+  color: #4caf50;
   margin-bottom: 10px;
 }
 
@@ -79,7 +79,7 @@ body {
 
 /* OK button */
 .popup-box .ok-btn {
-  background-color: #4BCFFA;
+  background-color: #4bcffa;
   color: white;
   border: none;
   border-radius: 5px;
@@ -91,7 +91,6 @@ body {
 .popup-box .ok-btn:hover {
   background-color: #3bbde5;
 }
-
 
 /* Popup container */
 .popup-container {
@@ -161,7 +160,8 @@ body {
 }
 
 /* Cancel and delete buttons */
-.popup-box .cancel-btn, .popup-box .delete-btn {
+.popup-box .cancel-btn,
+.popup-box .delete-btn {
   background-color: #ccc;
   color: white;
   border: none;

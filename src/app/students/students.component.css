@@ -4,15 +4,15 @@ table {
 
 .searh-input {
   outline: none;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   padding: 8px 10px;
   border-radius: 3px;
 }
 
 .searh-input:active {
-  border: 1px solid #BBB;
+  border: 1px solid #bbb;
 }
 
 .searh-input:focus {
-  border: 1px solid #AAA;
+  border: 1px solid #aaa;
 }

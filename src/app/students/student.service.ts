@@ -6,13 +6,12 @@ import { Student } from '../models/api-models/student.model';
 import { UpdateStudentRequest } from '../models/api-models/update-student-request.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class StudentService {
-
   private baseApiUrl = 'https://localhost:44389';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getStudents(): Observable<Student[]> {
     debugger;
@@ -21,10 +20,15 @@ export class StudentService {
 
   getStudent(studentId: string): Observable<Student> {
     debugger;
-    return this.httpClient.get<Student>(this.baseApiUrl + '/students/' + studentId)
+    return this.httpClient.get<Student>(
+      this.baseApiUrl + '/students/' + studentId
+    );
   }
 
-  updateStudent(studentId: string, studentRequest: Student): Observable<Student> {
+  updateStudent(
+    studentId: string,
+    studentRequest: Student
+  ): Observable<Student> {
     debugger;
     const updateStudentRequest: UpdateStudentRequest = {
       firstName: studentRequest.firstName,
@@ -34,15 +38,20 @@ export class StudentService {
       mobile: studentRequest.mobile,
       genderId: studentRequest.genderId,
       physicalAddress: studentRequest.address.physicalAddress,
-      postalAddress: studentRequest.address.postalAddress
-    }
+      postalAddress: studentRequest.address.postalAddress,
+    };
 
-    return this.httpClient.put<Student>(this.baseApiUrl + '/students/' + studentId, updateStudentRequest);
+    return this.httpClient.put<Student>(
+      this.baseApiUrl + '/students/' + studentId,
+      updateStudentRequest
+    );
   }
 
   deleteStudent(studentId: string): Observable<Student> {
     debugger;
-    return this.httpClient.delete<Student>(this.baseApiUrl + '/students/' + studentId);
+    return this.httpClient.delete<Student>(
+      this.baseApiUrl + '/students/' + studentId
+    );
   }
 
   addStudent(studentRequest: Student): Observable<Student> {
@@ -55,21 +64,26 @@ export class StudentService {
       mobile: studentRequest.mobile,
       genderId: studentRequest.genderId,
       physicalAddress: studentRequest.address.physicalAddress,
-      postalAddress: studentRequest.address.postalAddress
+      postalAddress: studentRequest.address.postalAddress,
     };
 
-    return this.httpClient.post<Student>(this.baseApiUrl + '/students/add', addStudentRequest);
+    return this.httpClient.post<Student>(
+      this.baseApiUrl + '/students/add',
+      addStudentRequest
+    );
   }
 
   uploadImage(studentId: string, file: File): Observable<any> {
     debugger;
     const formData = new FormData();
-    formData.append("profileImage", file);
+    formData.append('profileImage', file);
 
-    return this.httpClient.post(this.baseApiUrl + '/students/' + studentId + '/upload-image',
-      formData, {
-      responseType: 'text'
-    }
+    return this.httpClient.post(
+      this.baseApiUrl + '/students/' + studentId + '/upload-image',
+      formData,
+      {
+        responseType: 'text',
+      }
     );
   }
 

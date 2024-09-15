@@ -129,22 +129,22 @@
       </div>
     </div>
   </div>
-<div *ngIf="showDeletePopup" class="popup-container">
-  <div class="popup-box">
-    <div class="icon">⚠️</div>
-    <h2>Are you sure?</h2>
-    <p>Do you really want to delete this record? This process cannot be undone.</p>
-    <div class="popup-actions">
-      <button class="cancel-btn" (click)="closeDeletePopup()">Cancel</button>
-      <button class="delete-btn" (click)="confirmDelete()">Delete</button>
+  <div *ngIf="showDeletePopup" class="popup-container">
+    <div class="popup-box">
+      <div class="icon">⚠️</div>
+      <h2>Are you sure?</h2>
+      <p>Do you really want to delete this record? This process cannot be undone.</p>
+      <div class="popup-actions">
+        <button class="cancel-btn" (click)="closeDeletePopup()">Cancel</button>
+        <button class="delete-btn" (click)="confirmDelete()">Delete</button>
+      </div>
     </div>
   </div>
-</div>
-<div *ngIf="showSuccessPopup" class="popup-container">
-  <div class="popup-box">
-    <div class="icon">✔️</div>
-    <h2>Success!</h2>
-    <p>The student record has been deleted.</p>
-    <button class="ok-btn" (click)="closeSuccessPopup()">OK</button>
+  <div *ngIf="showSuccessPopup" class="popup-container">
+    <div class="popup-box">
+      <div class="icon">✔️</div>
+      <h2>Success!</h2>
+      <p>The student record has been deleted.</p>
+      <button class="ok-btn" (click)="closeSuccessPopup()">OK</button>
+    </div>
   </div>
-</div>
