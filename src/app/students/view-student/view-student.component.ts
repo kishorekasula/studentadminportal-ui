@@ -109,6 +109,7 @@ export class ViewStudentComponent implements OnInit {
 
   closePopup(): void {
     this.showPopup = false;
+    this.router.navigateByUrl('students'); // Add navigation to the home page
   }
 
   onDelete(): void {
